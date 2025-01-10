@@ -8,16 +8,16 @@ const PostListPage = () => {
 
     return (
         <div className=''>
-            <h1 className='mb-8 text-2xl'> All Posts: Where the fun never strikes out!</h1>
+            <h1 className='mb-8 text-2xl'> All Posts</h1>
             <button onClick={() => setOpen((prev) => !prev)}
                     className="bg-blue-800 text-sm text-white px-4 py-2 rounded-xl mb-4 md:hidden">
                 {open ? "Close" : "Filter or Search"}
             </button>
-            <div className="flex gap-8">
-                <div className="classnam">
+            <div className="flex flex-col-reverse gap-8 md:flex-row">
+                <div className=" ">
                     <PostList />
                 </div>
-                <div className="classnam">
+                <div className={`${open ? "block" : "hidden"} md:block`}>
                     <SideMenu />
                 </div>
             </div>
@@ -27,3 +27,6 @@ const PostListPage = () => {
 
 
 export default PostListPage;
+
+
+// flex-col-reverse
