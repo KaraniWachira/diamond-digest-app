@@ -1,9 +1,7 @@
-import {useUser} from "@clerk/clerk-react";
-import 'react-quill-new/dist/quill.snow.css';
-import ReactQuill from "react-quill-new";
 
 
 const Write = () => {
+
     // check whether user is authenticated
     const {isLoaded, isSignedIn} = useUser();
 
@@ -37,6 +35,5 @@ const Write = () => {
         </div>
     );
 };
-
-
+  
 export default Write
