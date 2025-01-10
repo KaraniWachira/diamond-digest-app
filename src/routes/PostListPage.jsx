@@ -29,4 +29,3 @@ const PostListPage = () => {
 export default PostListPage;
 
 
-// flex-col-reverse
