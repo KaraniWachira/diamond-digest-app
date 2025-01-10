@@ -11,7 +11,7 @@ const Write = () => {
         return <div className=''>Loading...</div>;
     }
     if (isLoaded && !isSignedIn) {
-        return <div>Kindly login</div>;
+        return <div>please login</div>;
     }
 
     return (
